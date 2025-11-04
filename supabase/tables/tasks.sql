@@ -1,0 +1,22 @@
+CREATE TABLE tasks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    client_id UUID,
+    assigned_to UUID,
+    created_by UUID,
+    task_title VARCHAR(255) NOT NULL,
+    task_description TEXT,
+    task_type VARCHAR(100),
+    priority VARCHAR(20) DEFAULT 'medium' CHECK (priority IN ('low',
+    'medium',
+    'high')),
+    status VARCHAR(50) DEFAULT 'pending' CHECK (status IN ('pending',
+    'in_progress',
+    'completed',
+    'cancelled')),
+    due_date DATE,
+    completion_date DATE,
+    estimated_hours DECIMAL(5,2),
+    actual_hours DECIMAL(5,2),
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);

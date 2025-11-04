@@ -1,0 +1,23 @@
+CREATE TABLE proposals (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    lead_id UUID,
+    client_id UUID,
+    proposal_title VARCHAR(255) NOT NULL,
+    proposal_type VARCHAR(100),
+    services_offered TEXT,
+    monthly_fee DECIMAL(10,2),
+    setup_fee DECIMAL(10,2),
+    contract_length INTEGER,
+    proposal_status VARCHAR(50) DEFAULT 'draft' CHECK (proposal_status IN ('draft',
+    'sent',
+    'viewed',
+    'accepted',
+    'rejected')),
+    sent_date DATE,
+    viewed_date DATE,
+    decision_date DATE,
+    proposal_document_url TEXT,
+    created_by UUID,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);

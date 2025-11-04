@@ -1,0 +1,23 @@
+CREATE TABLE leads (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    company_name VARCHAR(255),
+    contact_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(50),
+    website_url TEXT,
+    industry VARCHAR(100),
+    service_interest TEXT,
+    lead_source VARCHAR(100),
+    status VARCHAR(50) DEFAULT 'initial_contact' CHECK (status IN ('initial_contact',
+    'proposal_sent',
+    'negotiation',
+    'won',
+    'lost')),
+    estimated_value DECIMAL(10,2),
+    probability INTEGER DEFAULT 50,
+    assigned_to UUID,
+    next_followup_date DATE,
+    notes TEXT,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);

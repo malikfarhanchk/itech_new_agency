@@ -1,0 +1,83 @@
+{
+  "todos": {
+    "Coordinator": {
+      "1": {
+        "id": "1",
+        "content": "Project Setup and Architecture",
+        "details": "Set up the complete project structure with Next.js frontend and FastAPI backend. Configure Supabase database, authentication, and storage. Set up development environment and basic routing.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "2": {
+        "id": "2",
+        "content": "Authentication System Implementation",
+        "details": "Implement multi-tier authentication (Super Admin, Admin, Client) with Supabase Auth. Create login page, user approval workflow, and role-based access control. Implement white-labeling features.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "Admin Dashboard Core Features",
+        "details": "Build the main admin dashboard with financial widgets, client status grid, live admin counter, notifications hub, and internal chat system. Implement color-coded client status logic.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "4": {
+        "id": "4",
+        "content": "Client Management System",
+        "details": "Create client onboarding workflow, detailed client dashboard, project management suite (tasks, goals, notes, communication log), and client filtering system.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "5": {
+        "id": "5",
+        "content": "SEO Analysis and Data Processing",
+        "details": "Implement intelligent CSV data parser, Google API integrations (GA4, GSC, GBP), SEO analysis modules, competitor analysis, link analysis, and Google Trends integration.",
+        "status": "completed",
+        "priority": "high"
+      },
+      "6": {
+        "id": "6",
+        "content": "SEO Strategy & Audit Workspace",
+        "details": "Build the comprehensive 10-tab spreadsheet-like interface for client SEO strategy with real-time editing capabilities using AG-Grid or similar library.",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "7": {
+        "id": "7",
+        "content": "AI Integration with Gemini",
+        "details": "Integrate Google Gemini API for data analysis, summarization, and predictive insights. Implement cost control mechanisms and prompt management system.",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "8": {
+        "id": "8",
+        "content": "CRM and Lead Management",
+        "details": "Create leads dashboard with Kanban board, proposal generator, backlink opportunities database, and financial tracking with advanced charts.",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "9": {
+        "id": "9",
+        "content": "Client-Facing Dashboard",
+        "details": "Build simplified, branded client portal with performance charts, progress tracking, and competitor insights. Implement custom domain support.",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "10": {
+        "id": "10",
+        "content": "Internal Tools and Utilities",
+        "details": "Implement prompt management CRUD interface, schema markup generator and validator, lead tracking system for local SEO clients, and automated data processing.",
+        "status": "completed",
+        "priority": "low"
+      },
+      "11": {
+        "id": "11",
+        "content": "Testing, Deployment and Final Integration",
+        "details": "Comprehensive testing of all features, Vercel deployment setup, integration testing with Google APIs, and final system validation. Ensure the Gemini API key is properly integrated.",
+        "status": "completed",
+        "priority": "medium"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+CREATE TABLE financial_records (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    client_id UUID,
+    transaction_type VARCHAR(50) CHECK (transaction_type IN ('invoice',
+    'payment',
+    'expense',
+    'refund')),
+    amount DECIMAL(10,2) NOT NULL,
+    description TEXT,
+    transaction_date DATE NOT NULL,
+    due_date DATE,
+    payment_status VARCHAR(50) DEFAULT 'pending' CHECK (payment_status IN ('pending',
+    'paid',
+    'overdue',
+    'cancelled')),
+    payment_method VARCHAR(50),
+    invoice_number VARCHAR(100),
+    receipt_url TEXT,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
