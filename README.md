@@ -9,9 +9,11 @@
 
 ## 🚀 Live Demo
 
-**[View Live Application →](https://your-vercel-url.vercel.app)**
+**[View Live Application →](https://itech-new-agency.vercel.app)**
 
 *Login: admin@itech.com / Admin123!*
+
+*Last Updated: November 4, 2025 - Build fixes applied*
 
 ## ✨ Features
 
