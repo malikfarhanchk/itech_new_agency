@@ -40,5 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Ignore problematic TypeScript config files
+# Ignore problematic config files
 next.config.ts
+postcss.config.js
