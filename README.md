@@ -13,7 +13,7 @@
 
 *Login: admin@itech.com / Admin123!*
 
-*Last Updated: November 4, 2025 - PostCSS configuration issues resolved*
+*Last Updated: November 5, 2025 - PostCSS configuration conflict resolved*
 
 ## ✨ Features
 
@@ -128,6 +128,10 @@ npm start
 - `npm run build` - Build for production
 - `npm run start` - Start production server
 - `npm run lint` - Run ESLint
+
+## 🆘 PostCSS Configuration Note
+
+**IMPORTANT**: This project uses `postcss.config.cjs` for PostCSS configuration. The `postcss.config.js` file should be deleted or empty to avoid configuration conflicts.
 
 ## 📱 Screenshots
 
