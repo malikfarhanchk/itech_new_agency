@@ -7,6 +7,9 @@
 // has "type": "module" which makes all .js files ES modules
 // Next.js requires PostCSS config to be in CommonJS format
 //
+// BUILD_TIMESTAMP: 2025-11-05T08:02:51Z
+// Last updated: Force rebuild attempt
+//
 // For more info: https://nextjs.org/docs/app/building-your-application/configuring/post-css
 
 module.exports = {
